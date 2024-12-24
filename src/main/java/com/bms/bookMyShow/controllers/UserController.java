@@ -3,16 +3,15 @@ package com.bms.bookMyShow.controllers;
 import com.bms.bookMyShow.dtos.*;
 import com.bms.bookMyShow.dtos.ResponseStatus;
 import com.bms.bookMyShow.models.User;
-import com.bms.bookMyShow.services.UserService;
-import org.springframework.stereotype.Controller;
+import com.bms.bookMyShow.services.UserService1;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/users")
 public class UserController {
-    private UserService userService;
+    private UserService1 userService;
 
-    public UserController(UserService userService) {
+    public UserController(UserService1 userService) {
         this.userService = userService;
     }
 
